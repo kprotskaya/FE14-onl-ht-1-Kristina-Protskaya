@@ -1,3 +1,5 @@
+@import url("../css/awesome.css");
+@import url("../css/pricing.css");
 html {
   font-size: 16px;
   color: rgb(92, 91, 91);
@@ -11,101 +13,37 @@ html {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: auto;
-  background-color: white;
-}
-
-.card-title {
-
-}
-
-.card-title .text-title{
+.title {
   color: #212121;
   text-align: center;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 42px;
-  padding-top: 100px;
-  padding-bottom: 25px;
+  position: relative;
+  text-transform: uppercase;
 }
-.card-subtitle {
+  .title:after {
+    content: '';
+    position: absolute;
+    width: 64px;
+    bottom: 0;
+    height: 2px;
+    left: 50%;
+    background-color: #D98943;
+    margin: 0px 0px 0px -32px; }
 
-}
-
-.card-subtitle .text-subtitle{
+.subtitle{
   color: #86878B;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 19px;
-  padding: 30px;
-}
-.card-content {
-  margin-bottom: 0px;
-  display: inline-flex;
-  height: 100%;
-  width: 100%;
-}
-
-.card-content .card-content-item {
-  font-size: 18px;
-  float: block;
-  align-content: center;
-}
-.card-content .card-content-item .item-title{
-  color: #333333;
-  text-align: center;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 27px;
-}
-
-.card-content .card-content-item .item-description{
-  color: #000000;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: center;
-  padding: 16px;
 }
 
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
-
-hr {
-  width: 64px;
-  height: 2px;
-  border: 1px solid #D98943;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@font-face {
-  font-family: "Raleway"; 
-  src: url("../font/Raleway-VariableFont_wght.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
-  }
-
-  @font-face {
-    font-family: "Open Sans"; 
-    src: url("../font/OpenSans-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    }
